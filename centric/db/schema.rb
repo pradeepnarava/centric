@@ -9,7 +9,52 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100311192930) do
+ActiveRecord::Schema.define(:version => 20100313194047) do
+
+  create_table "customer_orders", :force => true do |t|
+    t.string   "tube_size"
+    t.string   "grade"
+    t.string   "specification"
+    t.integer  "unit_price"
+    t.integer  "customer_id"
+    t.integer  "serialize_id"
+    t.integer  "quantity"
+    t.string   "unit_of_measure"
+    t.string   "tital_weight"
+    t.decimal  "rate_per_kilo"
+    t.decimal  "total_amount"
+    t.string   "email"
+    t.string   "office_address"
+    t.string   "vat_no"
+    t.string   "ecc_no"
+    t.string   "delivery_address"
+    t.string   "po_no"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "customers", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "contact_person"
+    t.integer  "phone"
+    t.integer  "mobile"
+    t.string   "email"
+    t.string   "excise_registration_no"
+    t.string   "vat_no"
+    t.string   "tin_no"
+    t.string   "pan_no"
+    t.string   "payment_terms"
+    t.string   "bankers"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "serializes", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false

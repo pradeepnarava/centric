@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :customer_orders
+
+  map.resources :serializes
+
+  map.resources :customers
+
   map.resources :user_sessions
 
   map.resources :user_sessions

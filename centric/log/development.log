@@ -5426,3 +5426,308 @@ Rendering template within layouts/application
 Rendering users/new
 Rendered users/_form (5.4ms)
 Completed in 38ms (View: 20, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-03-12 01:53:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 92ms (View: 24, DB: 1) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-12 01:53:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (5.7ms)
+Completed in 41ms (View: 20, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-12 01:53:20) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (14.2ms)
+Completed in 74ms (View: 40, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-03-12 01:53:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 43ms (View: 12, DB: 1) | 200 OK [http://localhost/login]
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2010-03-13 23:51:10) [GET]
+
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/pradeep/centric1/centric/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;36;1mSQL (6.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (35.9ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100311192904)
+Migrating to UserSession (20100311192930)
+Migrating to CreateCustomers (20100313183233)
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1331.6ms)[0m   [0;1mCREATE TABLE "customers" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "contact_person" character varying(255), "phone" integer, "mobile" integer, "email" character varying(255), "excise_registration_no" character varying(255), "vat_no" character varying(255), "tin_no" character varying(255), "pan_no" character varying(255), "payment_terms" character varying(255), "bankers" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (54.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100313183233')[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2010-03-14 00:03:21) [GET]
+
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/pradeep/centric1/centric/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-03-14 00:03:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"customers"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mCustomer Load (1.8ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 20ms (View: 9, DB: 2) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#new (for 127.0.0.1 at 2010-03-14 00:03:32) [GET]
+  Parameters: {"action"=>"new", "controller"=>"customers"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+Rendering template within layouts/customers
+Rendering customers/new
+Completed in 53ms (View: 36, DB: 0) | 200 OK [http://localhost/customers/new]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-03-14 00:03:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"customers"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mCustomer Load (1.8ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 22ms (View: 7, DB: 2) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#new (for 127.0.0.1 at 2010-03-14 00:03:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"customers"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+Rendering template within layouts/customers
+Rendering customers/new
+Completed in 153ms (View: 137, DB: 0) | 200 OK [http://localhost/customers/new]
+
+
+Processing CustomersController#create (for 127.0.0.1 at 2010-03-14 00:04:34) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"customers", "customer"=>{"contact_person"=>"pradeep", "address"=>"dvshja", "name"=>"pradeep industries", "vat_no"=>"5435", "payment_terms"=>"gtfrgfd", "pan_no"=>"543543", "mobile"=>"5435345", "tin_no"=>"543", "phone"=>"5435435", "bankers"=>"gfdsgfds", "excise_registration_no"=>"543", "email"=>"ngfhfggmail.com"}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (36.6ms)[0m   [0mINSERT INTO "customers" ("name", "address", "contact_person", "vat_no", "created_at", "updated_at", "pan_no", "payment_terms", "mobile", "phone", "tin_no", "email", "excise_registration_no", "bankers") VALUES(E'pradeep industries', E'dvshja', E'pradeep', E'5435', '2010-03-13 18:34:34.865000', '2010-03-13 18:34:34.865000', E'543543', E'gtfrgfd', 5435345, 5435435, E'543', E'ngfhfggmail.com', E'543', E'gfdsgfds') RETURNING "id"[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to #<Customer:0xb67a6af0>
+Completed in 76ms (DB: 39) | 302 Found [http://localhost/customers]
+
+
+Processing CustomersController#show (for 127.0.0.1 at 2010-03-14 00:04:34) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"customers"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mCustomer Load (1.4ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Rendering template within layouts/customers
+Rendering customers/show
+Completed in 33ms (View: 13, DB: 2) | 200 OK [http://localhost/customers/1]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-03-14 00:04:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"customers"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mCustomer Load (1.9ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 41ms (View: 27, DB: 2) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#edit (for 127.0.0.1 at 2010-03-14 00:04:47) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"customers"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mCustomer Load (1.4ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Rendering template within layouts/customers
+Rendering customers/edit
+Completed in 47ms (View: 27, DB: 2) | 200 OK [http://localhost/customers/1/edit]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100311192904)
+Migrating to UserSession (20100311192930)
+Migrating to CreateCustomers (20100313183233)
+Migrating to CreateSerializes (20100313183655)
+  [4;35;1mSQL (0.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (110.6ms)[0m   [0;1mCREATE TABLE "serializes" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100313183655')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100311192904)
+Migrating to UserSession (20100311192930)
+Migrating to CreateCustomers (20100313183233)
+Migrating to CreateSerializes (20100313183655)
+Migrating to CreateCustomerOrders (20100313194047)
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (293.4ms)[0m   [0;1mCREATE TABLE "customer_orders" ("id" serial primary key, "tube_size" character varying(255), "grade" character varying(255), "specification" character varying(255), "unit_price" integer, "customer_id" integer, "serialize_id" integer, "quantity" integer, "unit_of_measure" character varying(255), "tital_weight" character varying(255), "rate_per_kilo" decimal, "total_amount" decimal, "email" character varying(255), "office_address" character varying(255), "vat_no" character varying(255), "ecc_no" character varying(255), "delivery_address" character varying(255), "po_no" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100313194047')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing CustomerOrdersController#index (for 127.0.0.1 at 2010-03-14 01:17:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"customer_orders"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mCustomerOrder Load (1.9ms)[0m   [0;1mSELECT * FROM "customer_orders" [0m
+Rendering template within layouts/customer_orders
+Rendering customer_orders/index
+Completed in 21ms (View: 7, DB: 2) | 200 OK [http://localhost/customer_orders]
+
+
+Processing CustomerOrdersController#new (for 127.0.0.1 at 2010-03-14 01:17:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"customer_orders"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+Rendering template within layouts/customer_orders
+Rendering customer_orders/new
+  [4;35;1mSerialize Load (0.9ms)[0m   [0mSELECT * FROM "serializes" [0m
+Completed in 66ms (View: 48, DB: 1) | 200 OK [http://localhost/customer_orders/new]
+
+
+Processing CustomerOrdersController#new (for 127.0.0.1 at 2010-03-14 01:19:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"customer_orders"}
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+Rendering template within layouts/customer_orders
+Rendering customer_orders/new
+  [4;36;1mCustomer Load (1.3ms)[0m   [0;1mSELECT * FROM "customers" [0m
+  [4;35;1mSerialize Load (0.9ms)[0m   [0mSELECT * FROM "serializes" [0m
+Completed in 195ms (View: 59, DB: 5) | 200 OK [http://localhost/customer_orders/new]
+
+
+Processing CustomerOrdersController#new (for 127.0.0.1 at 2010-03-14 01:20:31) [GET]
+  Parameters: {"action"=>"new", "controller"=>"customer_orders"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+Rendering template within layouts/customer_orders
+Rendering customer_orders/new
+  [4;36;1mCustomer Load (1.3ms)[0m   [0;1mSELECT * FROM "customers" [0m
+  [4;35;1mSerialize Load (0.8ms)[0m   [0mSELECT * FROM "serializes" [0m
+Completed in 100ms (View: 70, DB: 3) | 200 OK [http://localhost/customer_orders/new]
+
+
+Processing CustomerOrdersController#new (for 127.0.0.1 at 2010-03-14 01:20:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"customer_orders"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+Rendering template within layouts/customer_orders
+Rendering customer_orders/new
+  [4;36;1mCustomer Load (1.3ms)[0m   [0;1mSELECT * FROM "customers" [0m
+  [4;35;1mSerialize Load (0.8ms)[0m   [0mSELECT * FROM "serializes" [0m
+Completed in 70ms (View: 50, DB: 3) | 200 OK [http://localhost/customer_orders/new]
+
+
+Processing SerializesController#index (for 127.0.0.1 at 2010-03-14 01:21:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"serializes"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSerialize Load (1.6ms)[0m   [0;1mSELECT * FROM "serializes" [0m
+Rendering template within layouts/serializes
+Rendering serializes/index
+Completed in 19ms (View: 5, DB: 2) | 200 OK [http://localhost/serializes]
+
+
+Processing SerializesController#new (for 127.0.0.1 at 2010-03-14 01:21:31) [GET]
+  Parameters: {"action"=>"new", "controller"=>"serializes"}
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+Rendering template within layouts/serializes
+Rendering serializes/new
+Completed in 28ms (View: 10, DB: 1) | 200 OK [http://localhost/serializes/new]

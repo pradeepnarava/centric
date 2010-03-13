@@ -1,0 +1,52 @@
+<h1>Listing customer_orders</h1>
+
+<table>
+  <tr>
+    <th>Tube size</th>
+    <th>Grade</th>
+    <th>Specification</th>
+    <th>Unit price</th>
+    <th>Customer</th>
+    <th>Serialize</th>
+    <th>Quantity</th>
+    <th>Unit of measure</th>
+    <th>Tital weight</th>
+    <th>Rate per kilo</th>
+    <th>Total amount</th>
+    <th>Email</th>
+    <th>Office address</th>
+    <th>Vat no</th>
+    <th>Ecc no</th>
+    <th>Delivery address</th>
+    <th>Po no</th>
+  </tr>
+
+<% for customer_order in @customer_orders %>
+  <tr>
+    <td><%=h customer_order.tube_size %></td>
+    <td><%=h customer_order.grade %></td>
+    <td><%=h customer_order.specification %></td>
+    <td><%=h customer_order.unit_price %></td>
+    <td><%=h customer_order.customer_id %></td>
+    <td><%=h customer_order.serialize_id %></td>
+    <td><%=h customer_order.quantity %></td>
+    <td><%=h customer_order.unit_of_measure %></td>
+    <td><%=h customer_order.tital_weight %></td>
+    <td><%=h customer_order.rate_per_kilo %></td>
+    <td><%=h customer_order.total_amount %></td>
+    <td><%=h customer_order.email %></td>
+    <td><%=h customer_order.office_address %></td>
+    <td><%=h customer_order.vat_no %></td>
+    <td><%=h customer_order.ecc_no %></td>
+    <td><%=h customer_order.delivery_address %></td>
+    <td><%=h customer_order.po_no %></td>
+    <td><%= link_to 'Show', customer_order %></td>
+    <td><%= link_to 'Edit', edit_customer_order_path(customer_order) %></td>
+    <td><%= link_to 'Destroy', customer_order, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New customer_order', new_customer_order_path %>
