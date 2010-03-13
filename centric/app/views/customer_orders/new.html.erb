@@ -22,7 +22,7 @@
  
   <p>
     Customer Name
-   <%=collection_select(:customer, :customer_name, Customer.all,:id,:name,{:include_blank => "----------Select----------"})%>
+   <%=f.collection_select( :customer_id, Customer.all,:id,:name,{:include_blank => "----------Select----------"})%>
   </p>
 
   <p>
@@ -71,7 +71,7 @@
   </p>
   <p>
     Serial
-   <%=collection_select(:customer, :serialize, Serialize.all,:id,:name,{:include_blank => "----------Select----------"})%>
+   <%=f.collection_select(:serialize_id, Serialize.all,:id,:name,{:include_blank => "----------Select----------"})%>
   </p>
   <p>
     <%= f.submit "Create" %>
