@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :rawmaterial_categories
+
+
+
+  map.resources :salesplans
+
   map.resources :customer_orders
 
   map.resources :serializes

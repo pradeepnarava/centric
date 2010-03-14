@@ -1,0 +1,22 @@
+<h1>Listing rawmaterial_categories</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Grade</th>
+  </tr>
+
+<% for rawmaterial_category in @rawmaterial_categories %>
+  <tr>
+    <td><%=h rawmaterial_category.name %></td>
+    <td><%=h rawmaterial_category.grade %></td>
+    <td><%= link_to 'Show', rawmaterial_category %></td>
+    <td><%= link_to 'Edit', edit_rawmaterial_category_path(rawmaterial_category) %></td>
+    <td><%= link_to 'Destroy', rawmaterial_category, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New rawmaterial_category', new_rawmaterial_category_path %>

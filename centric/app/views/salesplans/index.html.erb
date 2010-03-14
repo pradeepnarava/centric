@@ -1,0 +1,38 @@
+<h1>Listing salesplans</h1>
+
+<table>
+  <tr>
+    <th>Po no</th>
+    <th>Customer name</th>
+    <th>Customer</th>
+    <th>Tube size</th>
+    <th>Serialize</th>
+    <th>Quantity</th>
+    <th>Customer code</th>
+    <th>Pieces</th>
+    <th>Meter</th>
+    <th>Kilos</th>
+  </tr>
+
+<% for salesplan in @salesplans %>
+  <tr>
+    <td><%=h salesplan.po_no %></td>
+    <td><%=h salesplan.customer_name %></td>
+    <td><%=h salesplan.customer_id %></td>
+    <td><%=h salesplan.tube_size %></td>
+    <td><%=h salesplan.serialize_id %></td>
+    <td><%=h salesplan.quantity %></td>
+    <td><%=h salesplan.customer_code %></td>
+    <td><%=h salesplan.pieces %></td>
+    <td><%=h salesplan.meter %></td>
+    <td><%=h salesplan.kilos %></td>
+    <td><%= link_to 'Show', salesplan %></td>
+    <td><%= link_to 'Edit', edit_salesplan_path(salesplan) %></td>
+    <td><%= link_to 'Destroy', salesplan, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New salesplan', new_salesplan_path %>
