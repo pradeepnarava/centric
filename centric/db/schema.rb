@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100314091524) do
+ActiveRecord::Schema.define(:version => 20100314095023) do
 
   create_table "customer_orders", :force => true do |t|
     t.string   "tube_size"
@@ -53,6 +53,18 @@ ActiveRecord::Schema.define(:version => 20100314091524) do
   create_table "rawmaterial_categories", :force => true do |t|
     t.string   "name"
     t.string   "grade"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "rawmaterials", :force => true do |t|
+    t.string   "name"
+    t.string   "grade"
+    t.string   "width"
+    t.string   "thickness"
+    t.string   "coil_weight"
+    t.string   "type"
+    t.integer  "rawmaterial_category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

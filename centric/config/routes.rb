@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :rawmaterials
+
+  map.resources :rawmaterials
+
+
+
   map.resources :rawmaterial_categories
 
 
