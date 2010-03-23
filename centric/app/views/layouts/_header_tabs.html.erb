@@ -1,6 +1,7 @@
  <div class="navTabs">
     <ul>
       <li class ='<%=controller.controller_name.eql?('rawmaterials')? 'current' : ''%>'><%=link_to("<span>Raw Materials</span>", rawmaterials_path)%></li>
+      <li class ='<%=controller.controller_name.eql?('rawmaterial_categories')? 'current' : ''%>'><%=link_to("<span>Rawmaterial Categories</span>", rawmaterial_categories_path)%></li>
       <li class ='<%=controller.controller_name.eql?('customer_orders')? 'current' : ''%>'><%=link_to("<span>Customer Order</span>", customer_orders_path)%></li>
       <li class ='<%=controller.controller_name.eql?('customers')? 'current' : ''%>'><%=link_to("<span>Customers</span>",customers_path)%></li>
       <li class ='<%=controller.controller_name.eql?('salesplans')? 'current' : ''%>'><%=link_to("<span>Sales Plane</span>",salesplans_path)%></li>

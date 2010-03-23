@@ -1,6 +1,6 @@
 /* MAIN BODY*/
 body {margin:0 auto 0 auto;background:#00375c;font-family:Arial, Helvetica, sans-serif;}
-.contentDiv {margin:0px auto 0px auto;padding:0px 15px 0px 15px;width:1002px;}
+.contentDiv {margin:0px auto 0px auto;padding:0px 15px 0px 15px;width:1222px;}
 
 /* GLOBAL STYLE @start*/
 .fl{float:left;}
@@ -95,7 +95,7 @@ input[type="submit"]:focus, input[type="button"]:focus {outline:none;}
 /* MAIN CONTENT AREA */
 /* for Internet Explorer */
 /*\*/ * html .mainContent {height:540px;} /**/
-.mainContent {padding:10px;text-align:left;background:#f8f8f8;border-right:1px solid #dddddd;border-left:1px solid #dddddd;border-bottom:1px solid #dddddd;position:relative;min-height:450px;height:100%;font-size:0.688em}
+.mainContent {padding:10px;text-align:left;background:#f8f8f8;border-right:1px solid #dddddd;border-left:1px solid #dddddd;border-bottom:1px solid #dddddd;position:relative;min-height:450px;height:100%;}
 .mainContent .rightCol {width:83%;float:right;}
 .mainContent .leftCol {width:16%;float:left;}
 .leftCol .appBox, .viewBox {background-color:#fafafa;margin: 0 0 5px 0;font-size:0.688em;}
