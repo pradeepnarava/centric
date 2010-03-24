@@ -13,8 +13,8 @@
               <th>Grade</th>
               <th>Specification</th>
               <th>Unit price</th>
-              <th>Customer</th>
-              <th>Serialize</th>
+              <th>Customer name</th>
+              <th>Serialize code</th>
               <th>Quantity</th>
               <th>Unit of measure</th>
               <th>Tital weight</th>
@@ -35,8 +35,8 @@
                 <td><%=h customer_order.grade %></td>
                 <td><%=h customer_order.specification %></td>
                 <td><%=h customer_order.unit_price %></td>
-                <td><%=h customer_order.customer_id %></td>
-                <td><%=h customer_order.serialize_id %></td>
+                <td><%=h customer_order.customer.name %></td>
+                <td><%=h customer_order.serialize.name %></td>
                 <td><%=h customer_order.quantity %></td>
                 <td><%=h customer_order.unit_of_measure %></td>
                 <td><%=h customer_order.tital_weight %></td>

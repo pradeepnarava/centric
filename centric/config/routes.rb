@@ -1,4 +1,15 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :uncoiler_reports
+
+  map.resources :tube_mill_performance_reports
+
+  map.resources :tube_mill_stoppage_reports
+
+  map.resources :slittingproductions
+
+  map.resources :slittings
+
+  map.root  :controller => "rawmaterials", :action => "index"
   map.resources :rawmaterials
 
   map.resources :rawmaterials
